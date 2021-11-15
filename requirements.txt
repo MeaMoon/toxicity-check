@@ -1,0 +1,4 @@
+requests
+Flask
+tensorflow-cpu==2.5.0
+gunicorn
