@@ -13,10 +13,10 @@ path = os.getcwd()
 app = Flask(__name__)
 #basepath = os.path.abspath(".")
 
-model = keras.models.load_model(path + "/models/Toxic_NN.h5")
+model = keras.models.load_model(path + "/models/smaller_toxicity.h5")
 
 # Loading the saved tokenizer
-with open("tokenizer.pickle", 'rb') as handle:
+with open("smaller_tokenizer.pickle", 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 # Function needed to prepare the input data from the user
