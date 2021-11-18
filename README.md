@@ -20,7 +20,7 @@ Since the data have been prepared properly I can now create the neural network m
 ## Flask Web Application
 After saving the model I had to create the web application to show its impact. With the help of the Flask package I created a simple backend which was loading the model and saved tokenizer, preparing the text from the user and after using the POST method the submitted and prepared text was evaluated on the model in order to return the output metrics for all of the 6 main toxicity factors.
 ## Heroku App Deployment
-After succesfully running the script on localhost I chose to make this App free to use for anyone. This part took a lot of time, since the created model was to0 "vast" for the free version, meaning that it was using a lot of RAM. By reducing the amount of training parameters, and specifiying the proper tensorflow package I managed to load this app. Anyone can check it out [here](https://heroku-toxicity-check.herokuapp.com/).
+After succesfully running the script on localhost I chose to make this App free to use for anyone. This part took a lot of time, since the created model was too "vast" for the free version, meaning that it was using a lot of RAM. By reducing the amount of training parameters, and specifiying the proper tensorflow package I managed to load this app. Anyone can check it out [here](https://heroku-toxicity-check.herokuapp.com/).
 ## Used Software
 * [Anaconda](https://www.anaconda.com/products/individual)
 * Spyder (Python 3.8)
